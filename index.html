@@ -1,0 +1,255 @@
+<!--21기들 안녕! 혹시 이걸 읽고 있는 21기가 있다면 GIGA 지원서에 꼭 적어줘. 좋은 일이 일어날수도..?-->
+<!--GIGA 지원할 생각이 없다구? 그럼 동아리 선발 일정이 모두 끝난 후에 hcugiga@gmail.com에 이걸 봤다고 메일 주면 선물을 줄게!-->
+<!--이건 비밀이다? 너만 알고 있어. 소문 내기 금지!!-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="현대청운고, hcu, hcu webzine, 청운웹진, 청운고 웹진, 웹진">
+    <meta name="description" content="현대청운고등학교 동아리 GIGA에서 진행하는 '2022 움직임' 웹진 프로젝트입니다.">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link rel="icon" href="image/favicon.png" type="image/x-icon">
+    <title>2022 움직임</title>
+    <style>
+        @font-face {
+            font-family: 'MaplestoryOTFBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+        }
+        @font-face {
+            font-family: 'S-CoreDream-3Light';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GangwonEduPowerExtraBoldA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @media screen and (min-width: 426px) {
+            body{
+                font-family: 'MaplestoryOTFBold';
+                background-image: url(../image/main/School.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                text-align: center;
+                user-select: none;
+            }
+            #sidebar{
+                width: 25%;
+                height: 100vh;
+                float: left;
+                text-align: center;
+                background-color: white;
+            }
+            #contents{
+                width: 75%;
+                float: left;
+            }
+            .ChungUn{
+                width: 70%;
+                margin-top: 12%;
+                margin-bottom: 12%;
+            }
+            .side{
+                position: relative;
+                width: 80%;
+                height: 50px;
+                line-height: 50px;
+                margin-top: 7%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 3px solid black;
+                color: black;
+                font-size: 1vw;
+            }
+            h1{
+                font-family: 'GangwonEduPowerExtraBoldA';
+                margin-top: 7vw;
+                font-size: 5vw;
+                text-shadow: 3px 3px 10px white;
+            }
+            .button{
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .main{
+                font-family: 'GangwonEduPowerExtraBoldA';
+                display: inline-block;
+                width: 20vw;
+                height: 5vw;
+                line-height: 6.5vw;
+                border: 3px solid white;
+                border-radius: 10px;
+                text-align: center;
+                margin-top: 8vw;
+                margin-left: 2vw;
+                margin-right: 2vw;
+                font-size: 3vw;
+                color: white;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+            .main:hover{
+                translate: 0 -5px;
+                box-shadow: 0 0 10px white;
+                transition: all 0.3s;
+            }
+            a{
+                text-decoration: none;
+            }
+            .side::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 50px;
+                background-color: rgba(170, 231, 255, 0.2);
+                transform: scaleX(0);
+                visibility: hidden;
+                transition: all 500ms ease-out;
+            }
+            .side:hover::after{
+                visibility: visible;
+                transform: scaleX(1);
+            }
+            footer{
+                font-family: 'S-CoreDream-3Light';
+                font-size: 1vw;
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                text-shadow: 0 0 2px white;
+            }
+            .phone{
+                height: 0;
+                visibility: hidden;
+            }
+        }
+        @media screen and (max-width: 426px) {
+            body{
+                font-family: 'MaplestoryOTFBold';
+                text-align: center;
+                margin: 0;
+                user-select: none;
+            }
+            #sidebar{
+                width: 100%;
+                height: 30vh;
+                text-align: center;
+                background-color: white;
+            }
+            #contents{
+                width: 100%;
+                height: 68vh;
+                background-image: url(../image/main/CherryBlossom.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .ChungUn{
+                width: 0%;
+            }
+            h1{
+                padding-top: 20vw;
+                color: white;
+                text-shadow: 3px 3px black;
+            }
+            .side{
+                position: relative;
+                width: 80%;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 3%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 3px solid black;
+                color: black;
+                font-size: 3vw;
+            }
+            .button{
+                display: inline-block;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 10%;
+            }
+            .main{
+                display: inline-block;
+                width: 80%;
+                height: 50px;
+                line-height: 50px;
+                border: 3px solid white;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 4vw;
+                color: black;
+                margin-top: 3vw;
+                margin-bottom: 3vw;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+            .main:hover{
+                box-shadow: 0 0 10px white;
+                transition: all 0.3s;
+            }
+            a{
+                text-decoration: none;
+            }
+            .side::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 40px;
+                background-color: rgba(230, 186, 255, 0.2);
+                transform: scaleX(0);
+                visibility: hidden;
+                transition: all 500ms ease-out;
+            }
+            .side:hover::after{
+                visibility: visible;
+                transform: scaleX(1);
+            }
+            footer{
+                font-family: 'S-CoreDream-3Light';
+                font-size: 1vw;
+                color: black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                text-shadow: 0 0 2px white;
+            }
+            .laptop{
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside id="sidebar">
+        <img class="ChungUn" src="image/main/ChungUn.png">
+        <a href="https://apply.hcu-webzine.com/login/" target="_blank"><div class="side">동아리 지원 시스템</div></a>
+        <a href="source/정규/mechanic/GIGA.html" target="_blank"><div class="side">만든 사람들</div></a>
+        <a href="http://2021.hcu-webzine.com/" target="_blank"><div class="side">작년 웹진 바로가기</div></a>
+    </aside>
+    <main id="contents">
+        <h1>2022 움직임</h1>
+        <div class="button">
+            <a href="source/정규/정규.html"><div class="main">정규 동아리</div></a>
+            <a href="source/자율/자율.html"><div class="main">자율 동아리</div></a>
+        </div>
+    </main>
+    <footer>
+        <div class="laptop">2022 현대청운고 웹진 움직임 | Copyright 2022. GIGA. all rights reserved. | Contact : giga@hcu.hs.kr | PHOTO BY. 백시은</div>
+        <div class="phone">2022 현대청운고 웹진 움직임 | Copyright 2022. GIGA. all rights reserved.</div>
+        <div class="phone">Contact : giga@hcu.hs.kr | PHOTO BY. 정민재</div>
+    </footer>
+</body>
+</html>
