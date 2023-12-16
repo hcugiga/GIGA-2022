@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <link rel="icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <title>솔매</title>
+    <style>
+        @font-face {
+            font-family: 'Grandpa_sharing';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Grandpa_sharing.woff') format('woff');
+            font-style: normal;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-color: #ffffff;
+            user-select: none;
+            font-family: 'Grandpa_sharing';
+            font-size: 1.3vw;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            backdrop-filter: blur(5px);
+        }
+        .logo{
+            display: inline-block;
+            height: 3vw;
+            margin: 0.3vw 5vw;
+        }
+        ul{
+            list-style-type: none;
+            display: inline-block;
+            line-height: 3.6vw;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        li{
+            float: left;
+        }
+        li > a{
+            text-decoration: none;
+            color: #000000;
+            margin: 0 5vw;
+        }
+        div{
+            margin-top: 4vw;
+            text-align: center;
+        }
+        .video{
+            margin-top: 1vw;
+        }
+        div > img{
+            width: 80vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div > video{
+            width: 70vw;
+            margin-bottom: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#top"><img src="../../../image/logo/솔매_편집본.webp" class="logo"></a>
+        <ul>
+            <li><a href="#page1">동아리 소개</a></li>
+            <li><a href="#page2">활동 내용</a></li>
+            <li><a href="#page3">공연 영상</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="../../../image/자율/공연/솔매/001.webp">
+        <img src="../../../image/자율/공연/솔매/002.webp">
+        <img src="../../../image/자율/공연/솔매/003.webp" id="page1">
+        <img src="../../../image/자율/공연/솔매/004.webp">
+        <img src="../../../image/자율/공연/솔매/005.webp" id="page2">
+        <img src="../../../image/자율/공연/솔매/006.webp">
+        <img src="../../../image/자율/공연/솔매/007.webp" id="page3">
+        <img src="../../../image/자율/공연/솔매/008.webp">
+    </div>
+    <div class="video"><video controls src="../../../image/video/솔매.mp4"></video></div>
+</body>
+</html>

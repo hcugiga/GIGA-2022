@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../image/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../image/favicon.png" type="image/x-icon">
+    <title>정규 동아리</title>
+    <style>
+        @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-pen.css');
+        @font-face {
+            font-family: 'MaplestoryOTFBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @keyframes animation{
+            from{
+                margin-top: 15vw;
+                opacity: 0;
+            }
+            to{
+                margin-top: 10vw;
+                opacity: 1;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            body{
+                text-align: center;
+                font-family: 'NanumBarunPen';
+                background: linear-gradient(white, rgba(189, 224, 255));
+                background-size: 300% 300%;
+                user-select: none;
+            }
+        }
+        @media screen and (min-width: 426px) and (max-width: 769px) {
+            body{
+                text-align: center;
+                font-family: 'NanumBarunPen';
+                background: linear-gradient(white, rgba(189, 224, 255));
+                background-size: 500% 500%;
+                user-select: none;
+            }
+        }
+        @media screen and (max-width: 426px) {
+            body{
+                text-align: center;
+                font-family: 'NanumBarunPen';
+                background: linear-gradient(white, rgba(189, 224, 255));
+                background-size: 600% 600%;
+                user-select: none;
+            }
+        }
+        h1{
+            font-family: 'MaplestoryOTFBold';
+            font-size: 3vw;
+            margin-top: 5vw;
+        }
+        div{
+            display: inline-block;
+            width: 12vw;
+            height: 12vw;
+            line-height: 12vw;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 15%;
+            margin-left: 3vw;
+            margin-right: 3vw;
+            font-size: 2vw;
+            box-shadow: 0 0 10px;
+            background-color: white;
+            animation-name: animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        .science{
+            color: rgb(147, 217, 170);
+        }
+        .math{
+            color: rgb(114, 177, 193);
+        }
+        .mechanic{
+            color: rgb(111, 154, 255);
+        }
+        .medical{
+            color: rgb(150, 160, 238);
+        }
+        .liberal{
+            color: rgb(216, 154, 255);
+        }
+        div:hover{
+            box-shadow: 0 0 20px;
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>정규 동아리</h1>
+    <a href="science/science.html"><div class="science">자연과학</div></a>
+    <a href="math/math.html"><div class="math">수학</div></a>
+    <a href="mechanic/mechanic.html"><div class="mechanic">공학</div></a>
+    <a href="medical/medical.html"><div class="medical">의약학</div></a>
+    <a href="liberal/liberal.html"><div class="liberal">인문</div></a>
+</body>
+</html>

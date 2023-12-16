@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <link rel="icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <title>SYMPHONY</title>
+    <style>
+        @font-face {
+            font-family: 'HSBombaram21-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-color: white;
+            user-select: none;
+            font-family: 'HSBombaram21-Regular';
+            font-size: 1.1vw;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(3px);
+            z-index: 2;
+        }
+        .logo{
+            display: inline-block;
+            height: 3vw;
+            margin: 0.3vw 5vw;
+        }
+        ul{
+            list-style-type: none;
+            display: inline-block;
+            line-height: 3.6vw;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        li{
+            float: left;
+        }
+        li > a{
+            text-decoration: none;
+            color: #626E71;
+            margin: 0 5vw;
+        }
+        div{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div:first-of-type{
+            margin-top: 3vw;
+        }
+        .video{
+            background-image: url(../../../image/자율/공연/심포니/007.png);
+            background-size: contain;
+            background-repeat: repeat;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+        div > img{
+            width: 80vw;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#top"><img src="../../../image/logo/심포니_편집본.webp" class="logo"></a>
+        <ul>
+            <li><a href="#page1">동아리 소개</a></li>
+            <li><a href="#page2">활동 소개</a></li>
+            <li><a href="#page3">부원 소개</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="../../../image/자율/공연/심포니/001.webp">
+        <img src="../../../image/자율/공연/심포니/002.webp" id="page1">
+        <img src="../../../image/자율/공연/심포니/003.webp">
+        <img src="../../../image/자율/공연/심포니/004.webp">
+        <img src="../../../image/자율/공연/심포니/005.webp" id="page2">
+        <img src="../../../image/자율/공연/심포니/006.webp">
+    </div>
+    <div class="video">
+        <video controls src="../../../image/video/SYMPHONY_Carmen.mp4"></video>
+    </div>
+    <div>
+        <img src="../../../image/자율/공연/심포니/008.webp" id="page3">
+        <img src="../../../image/자율/공연/심포니/009.webp">
+        <img src="../../../image/자율/공연/심포니/010.webp">
+        <img src="../../../image/자율/공연/심포니/011.webp">
+        <img src="../../../image/자율/공연/심포니/012.webp">
+        <img src="../../../image/자율/공연/심포니/013.webp">
+    </div>
+</body>
+</html>

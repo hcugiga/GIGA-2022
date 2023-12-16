@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <link rel="icon" href="../../../image/favicon.webp" type="image/x-icon">
+    <title>LOD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            background-color: #000000;
+            user-select: none;
+            font-family: 'Do Hyeon', sans-serif;
+            font-size: 1.2vw;
+            font-weight: 600;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            text-align: center;
+            background-color: #00000000;
+            backdrop-filter: blur(10px);
+            z-index: 2;
+        }
+        .logo{
+            display: inline-block;
+            height: 3vw;
+            margin: 0.3vw 5vw;
+        }
+        ul{
+            list-style-type: none;
+            display: inline-block;
+            line-height: 3.6vw;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        li{
+            float: left;
+        }
+        li > a{
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 5vw;
+        }
+        div{
+            width: 80vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div:first-of-type{
+            margin-top: 4vw;
+        }
+        .video{
+            background-image: url(../../../image/자율/공연/LOD/012.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+        }
+        div > img{
+            width: 80vw;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#top"><img src="../../../image\logo\LOD_편집본.webp" class="logo"></a>
+        <ul>
+            <li><a href="#page1">동아리 소개</a></li>
+            <li><a href="#page2">활동 내용</a></li>
+            <li><a href="#page3">부원 소개</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="../../../image/자율/공연/LOD/001.webp">
+        <img src="../../../image/자율/공연/LOD/002.webp" id="page1">
+        <img src="../../../image/자율/공연/LOD/003.webp">
+        <img src="../../../image/자율/공연/LOD/004.webp">
+        <img src="../../../image/자율/공연/LOD/005.webp">
+        <img src="../../../image/자율/공연/LOD/006.webp">
+        <img src="../../../image/자율/공연/LOD/007.webp" id="page2">
+        <img src="../../../image/자율/공연/LOD/008.webp">
+        <img src="../../../image/자율/공연/LOD/009.webp">
+        <img src="../../../image/자율/공연/LOD/010.webp">
+        <img src="../../../image/자율/공연/LOD/011.webp">
+    </div>
+    <div id="page3" class="video"><video controls src="../../../image/video/LOD_Boombayah.MP4"></video></div>
+    <div class="video"><video controls src="../../../image/video/LOD_Attention.MP4"></video></div>
+    <div class="video"><video controls src="../../../image/video/LOD_Never&CherryBomb.MP4"></video></div>
+    <div>
+        <img src="../../../image/자율/공연/LOD/013.png">
+    </div>
+</body>
+</html>
